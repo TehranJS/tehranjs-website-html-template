@@ -17,15 +17,14 @@
 		height: 100vh;
 	} // breakpoint from: tablet
 
-	&:after {
+	&:before {
 		content: '';
 		position: absolute;
 		top: 0;
-		z-index: -1;
 		width: 100%;
 		height: 100%;
 		left: -2rem;
-		background: #3360A3 url('../assets/images/contents/tehranjs-hero-bg.png') center ($spacing-large * 1.5) no-repeat;
+		background: url('../assets/images/contents/tehranjs-hero-bg.png') center ($spacing-large * 1.5) no-repeat;
 		background-size: inuit-rem(350px);
 
 		@include mq($from: 400px) {
@@ -44,7 +43,7 @@
 			background-size: inuit-rem(600px);
 		} // breakpoint from: tablet
 
-	} // &:after
+	} // &:before
 
 } // .c-section-hero
 

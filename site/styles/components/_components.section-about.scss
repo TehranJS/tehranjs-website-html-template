@@ -1,0 +1,48 @@
+
+
+.c-section-about {
+	padding: inuit-rem($spacing-large) 0;
+
+	@include mq($from: 600px) {
+		padding: inuit-rem($spacing-huge) 0;
+	}
+
+	@include mq($from: desktop) {
+		height: 100vh;
+	} // breakpoint from: desktop
+
+	p {
+		@include font-size(16px, 2);
+
+		@include mq($from: tablet) {
+			@include font-size(20px, 2);
+		} // breakpoint from: tablet
+	}
+
+	b, a {
+		color: darken($secondary-dark, 25%);
+	}
+
+	b > a {
+		border-bottom: 1px solid darken($secondary-dark, 25%);
+
+		@include on-event {
+			color: darken($secondary-dark, 45%);
+		}
+	}
+
+	svg {
+		display: inline-block;
+		vertical-align: middle;
+		transition: $global-transition;
+		fill: inherit;
+
+		@include on-event {
+			fill: #fff;
+		}
+
+		@include mq($until: tablet) {
+			margin: 0 .5rem;
+		} // breakpoint until: tablet
+	}
+} // .c-section-events

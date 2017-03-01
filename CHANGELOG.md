@@ -3,6 +3,7 @@
 * initial structure
 
 
-### 0.0.2
+### 0.0.12
 
-* feature: added home hero sections
+* feature: added home hero section
+* feature: added home about section

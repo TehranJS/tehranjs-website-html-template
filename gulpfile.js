@@ -181,6 +181,11 @@ gulp.task('wiredep', () => {
 		.pipe(gulp.dest('site'));
 });
 
+gulp.task('deploy', function() {
+  return gulp.src('./public/**/*')
+    .pipe($.ghPages());
+});
+
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
 	return gulp.src('public/**/*').pipe($.size({title: 'build', gzip: true}));
 });

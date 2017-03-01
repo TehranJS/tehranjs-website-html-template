@@ -33,4 +33,13 @@ dd, ol, ul {
   @include inuit-rem(margin-right, $spacing-small);
 }
 
-/* stylelint-enable selector-list-comma-newline-after */
+
+
+/**
+ * overwrite normilize
+ */
+
+b,
+strong {
+  font-weight: bold;
+}

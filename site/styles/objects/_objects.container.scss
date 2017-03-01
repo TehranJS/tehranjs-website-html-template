@@ -1,0 +1,9 @@
+
+.o-container {
+	@include inuit-clearfix();
+	padding-right: inuit-rem($spacing-base);
+	padding-left:  inuit-rem($spacing-base);
+	margin-right: auto;
+	margin-left:  auto;
+	max-width: $wrapper-width;
+} // .o-container
