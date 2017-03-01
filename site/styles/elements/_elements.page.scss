@@ -12,7 +12,8 @@
 html {
 	font-family: $global-farsi-font-stack;
 	font-weight: 300;
-	color: $gray-base;
+	color: #fff;
+	background-color: $secondary-dark;
 	// overflow-x: hidden; // 1
 
 	@include dpi-mq($until: poor) {

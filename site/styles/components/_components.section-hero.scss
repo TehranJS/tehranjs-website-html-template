@@ -1,0 +1,102 @@
+
+
+.c-section-hero {
+	height: inuit-rem($spacing-base*18);
+	position: relative;
+	overflow: hidden;
+
+	@include mq($from: 400px) {
+		height: inuit-rem($spacing-base*19);
+	} // breakpoint from: 400px
+
+	@include mq($from: 600px) {
+		height: inuit-rem($spacing-base*25);
+	} // breakpoint from: 600px
+
+	@include mq($from: tablet) {
+		height: 100vh;
+	} // breakpoint from: tablet
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		left: -2rem;
+		background: #3360A3 url('../assets/images/contents/tehranjs-hero-bg.png') center ($spacing-large * 1.5) no-repeat;
+		background-size: inuit-rem(350px);
+
+		@include mq($from: 400px) {
+			left: 0;
+			background-size: inuit-rem(400px);
+		} // breakpoint from: 400px
+
+		@include mq($from: 600px) {
+			top: inuit-rem($spacing-large);
+			background-size: inuit-rem(500px);
+			background-image: url('../assets/images/contents/tehranjs-hero-bg@3x.png');
+		} // breakpoint from: 400px
+
+		@include mq($from: tablet) {
+			top: inuit-rem($spacing-large * 1.5);
+			background-size: inuit-rem(600px);
+		} // breakpoint from: tablet
+
+	} // &:after
+
+} // .c-section-hero
+
+
+
+.c-section-hero__title {
+	padding-top: inuit-rem($spacing-large);
+
+	@include mq($from: 400px) {
+		width: 330px;
+		position: absolute;
+		top: inuit-rem($spacing-base);
+		left: 50%;
+		transform: translateX(-50%);
+		padding-top: inuit-rem($spacing-base * 1.5);
+	} // breakpoint from: 400px
+
+	@include mq($from: 600px) {
+		width: 415px;
+		padding-top: inuit-rem($spacing-huge);
+		@include font-size(42px, 1.5);
+	} // breakpoint from: 600px
+
+	@include mq($from: tablet) {
+		width: 490px;
+		padding-top: inuit-rem($spacing-huge * 1.4);
+	} // breakpoint from: tablet
+} // .c-section-hero__title
+
+
+.c-section-hero__welcome {
+	position: absolute;
+	top: 390px;
+	left: 2rem;
+	font-weight: bold;
+	text-align: left;
+	@include font-size(24px);
+
+	@include mq($from: 400px) {
+		top: 430px;
+	}
+
+	@include mq($from: 600px) {
+		top: 500px;
+	} // breakpoint from: 600px
+
+	@include mq($from: tablet) {
+		width: 550px;
+		top: 605px;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: left;
+	} // breakpoint from: tablet
+
+} // .c-section-hero__welcome
