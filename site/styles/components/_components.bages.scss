@@ -1,0 +1,47 @@
+/* ==========================================================================
+   #BAGES
+   ========================================================================== */
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ */
+
+.c-bage {
+  display: inline-block; /* [1] */
+  vertical-align: middle; /* [2] */
+  // font: inherit; /* [3] */
+  text-align: center; /* [4] */
+  margin: 0; /* [4] */
+  padding: 0 $spacing-small;
+  border-radius: $global-radius;
+  @include font-size(12px);
+
+	&--tiny {
+		padding-right: $spacing-tiny;
+		padding-left: $spacing-tiny;
+	}
+}
+
+
+
+
+
+/* Style variants
+   ========================================================================== */
+
+// .c-bage--primary {
+//   background-color: $primary-darker;
+//   color: white;
+// }
+
+
+/**
+ * 1. Force all button-styled elements to appear clickable.
+ */
+a.c-bage {
+  cursor: pointer; /* [1] */
+}

@@ -1,0 +1,38 @@
+/* ==========================================================================
+   INUITCSS
+   ========================================================================== */
+
+/**
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Core....................inuitcss’ core and setup settings.
+ *
+ * TOOLS
+ * Rem....................Tools for converting pixel inputs into their rem equivalents.
+ * Font-size............A mixin which guarantees baseline-friendly line-heights.
+ * Clearfix...............Micro clearfix mixin.
+ * Hidden................Mixin for hiding elements.
+ *
+ */
+
+// SETTINGS
+$inuit-global-font-size:   14px;
+$inuit-global-line-height: 28px;
+@import "../../../bower_components/inuitcss/settings/settings.core";
+
+
+
+
+
+// TOOLS
+@import "../../../bower_components/inuitcss/tools/tools.rem";
+@import "../../../bower_components/inuitcss/tools/tools.font-size";
+@import "../../../bower_components/inuitcss/tools/tools.clearfix";
+@import "../../../bower_components/inuitcss/tools/tools.hidden";

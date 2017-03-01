@@ -1,0 +1,121 @@
+/* ==========================================================================
+	 #BUTTONS
+	 ========================================================================== */
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ */
+
+.c-btn {
+	display: inline-block; /* [1] */
+	vertical-align: middle; /* [2] */
+	font: inherit; /* [3] */
+	text-align: center; /* [4] */
+	margin: 0; /* [4] */
+	cursor: pointer; /* [5] */
+	padding: $spacing-small $spacing-base;
+	transition: $global-transition;
+	border-radius: $global-radius;
+	border-width: 0;
+}
+
+
+
+
+
+/* Style variants
+	 ========================================================================== */
+
+.c-btn--primary {
+	background-color: $primary;
+
+	&,
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration: none; /* [4] */
+		color: #fff;
+	}
+
+	&:hover,
+	&:focus {
+		background-color: $primary-dark;
+	}
+
+}
+
+
+
+
+
+/* Size variants
+	 ========================================================================== */
+
+.c-btn--tiny {
+	padding: inuit-rem($spacing-tiny/2) inuit-rem($spacing-tiny);
+}
+
+.c-btn--small {
+	padding: inuit-rem($spacing-tiny) inuit-rem($spacing-small);
+}
+
+.c-btn--large {
+	padding: inuit-rem($spacing-base) inuit-rem($spacing-large);
+}
+
+.c-btn--full {
+	width: 100%;
+	display: block;
+}
+
+
+
+/* Ghost buttons
+	 ========================================================================== */
+
+/**
+ * Ghost buttons have see-through backgrounds and are bordered.
+ */
+
+$btn-ghost-border-width: 2px;
+
+.c-btn--ghost {
+	border: $btn-ghost-border-width solid currentColor;
+	padding: ($spacing-small - $btn-ghost-border-width) ($spacing-base - $btn-ghost-border-width);
+
+	&,
+	&:hover,
+	&:active,
+	&:focus {
+		background: none;
+	}
+
+	&.c-btn--tiny {
+		padding: ($spacing-tiny/2 - $btn-ghost-border-width) ($spacing-tiny - $btn-ghost-border-width);
+	}
+
+	&.c-btn--small {
+		padding: ($spacing-tiny - $btn-ghost-border-width) ($spacing-small - $btn-ghost-border-width);
+	}
+
+	&.c-btn--large {
+		padding: ($spacing-base - $btn-ghost-border-width) ($spacing-large - $btn-ghost-border-width);
+	}
+
+	&.c-btn--primary {
+		border-color: $primary;
+		color: $primary-dark;
+
+		@include on-event {
+			color: #fff;
+			background-color: $primary;
+		}
+
+	}
+
+}

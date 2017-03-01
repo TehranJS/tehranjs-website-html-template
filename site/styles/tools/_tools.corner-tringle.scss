@@ -1,0 +1,15 @@
+
+@mixin corner-tringle {
+	&:before {
+		width: 0;
+		height: 0;
+		position: absolute;
+		bottom: -#{$spacing-tiny};
+		right: -#{$spacing-tiny};
+		transform: rotate(225deg);
+		content: '';
+		border-style: solid;
+		border-width: $spacing-tiny;
+		border-color:  transparent $secondary transparent transparent;
+	}
+}
