@@ -1,6 +1,7 @@
 
 const del = require('del');
 const gulp = require('gulp');
+const yargs = require("yargs").argv;
 const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
 const browserSync = require('browser-sync');
@@ -9,7 +10,7 @@ const gulpLoadPlugins = require('gulp-load-plugins');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
-
+const PRODUCTION = yargs.production;
 
 
 gulp.task('styles', () => {
@@ -75,6 +76,8 @@ gulp.task('html', ['styles', 'scripts'], () => {
 		}))
 		.pipe($.if('*.js', $.uglify()))
 		.pipe($.if('*.css', $.cssnano({safe: true, autoprefixer: false})))
+		.pipe($.if('*.html',
+							( $.if( PRODUCTION , $.htmlmin({collapseWhitespace: true})))))
 		.pipe(gulp.dest('public'));
 })
 

@@ -8,7 +8,7 @@
 	}
 
 	@include mq($from: desktop) {
-		height: 100vh;
+		min-height: 100vh;
 	} // breakpoint from: desktop
 
 	p {
@@ -46,3 +46,11 @@
 		} // breakpoint until: tablet
 	}
 } // .c-section-events
+
+
+
+.c-section-about__cake {
+	position: relative;
+	height: 150px;
+	margin-bottom: inuit-rem($spacing-base * 1.5);
+} // .c-section-about__cake

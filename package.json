@@ -1,6 +1,6 @@
 {
   "name": "tehranjs-website-html-template",
-  "version": "0.0.12",
+  "version": "0.0.2",
   "description": "HTML template of tehranjs.com website",
   "main": "site/index.html",
   "author": "Seyed Naser Hassani <snhasani@gmail.com>",
@@ -34,6 +34,7 @@
     "gulp-cssnano": "^2.1.2",
     "gulp-eslint": "^3.0.1",
     "gulp-gh-pages": "^0.5.4",
+    "gulp-htmlmin": "^3.0.0",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^3.1.1",
     "gulp-load-plugins": "^1.5.0",
@@ -50,7 +51,8 @@
     "run-sequence": "^1.2.2",
     "surge": "^0.18.0",
     "webpack-stream": "^3.2.0",
-    "wiredep": "^4.0.0"
+    "wiredep": "^4.0.0",
+    "yargs": "^7.0.1"
   },
   "eslintConfig": {
     "env": {
