@@ -1,101 +1,110 @@
-
-
 .c-section-hero {
-	height: inuit-rem($spacing-base*18);
-	position: relative;
-	overflow: hidden;
-
-	@include mq($from: 400px) {
-		height: inuit-rem($spacing-base*19);
-	} // breakpoint from: 400px
-
-	@include mq($from: 600px) {
-		height: inuit-rem($spacing-base*25);
-	} // breakpoint from: 600px
-
-	@include mq($from: tablet) {
-		height: 100vh;
-	} // breakpoint from: tablet
-
-	&:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		left: -2rem;
-		background: url('../assets/images/contents/tehranjs-hero-bg.png') center ($spacing-large * 1.5) no-repeat;
-		background-size: inuit-rem(350px);
-
-		@include mq($from: 400px) {
-			left: 0;
-			background-size: inuit-rem(400px);
-		} // breakpoint from: 400px
-
-		@include mq($from: 600px) {
-			top: inuit-rem($spacing-large);
-			background-size: inuit-rem(500px);
-			background-image: url('../assets/images/contents/tehranjs-hero-bg@3x.png');
-		} // breakpoint from: 400px
-
-		@include mq($from: tablet) {
-			top: inuit-rem($spacing-large * 1.5);
-			background-size: inuit-rem(600px);
-		} // breakpoint from: tablet
-
-	} // &:before
-
+    height: 36rem;
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background: $secondary;
+    background: linear-gradient(to left, $secondary, darken($secondary, 5%));
+    @include mq($from: 400px) {
+        height: 38rem;
+    } // breakpoint from: 400px
+    @include mq($from: 600px) {
+        height: 50rem;
+    } // breakpoint from: 600px
+    @include mq($from: tablet) {
+        height: 100vh;
+    } // breakpoint from: tablet
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../assets/images/contents/tehranjs-hero-bg.png') center 6rem no-repeat;
+        background-size: 25rem;
+        @include mq($from: 400px) {
+            background-size: 30rem;
+        } // breakpoint from: 400px
+        @include mq($from: 600px) {
+            top: inuit-rem($spacing-large);
+            background-size: inuit-rem(500px);
+            background-image: url('../assets/images/contents/tehranjs-hero-bg@3x.png');
+        } // breakpoint from: 400px
+        @include mq($from: tablet) {
+            top: 0;
+            background-size: inuit-rem(600px);
+        } // breakpoint from: tablet
+        @include mq($from: 1600px) {
+            background-size: 60rem;
+        } // breakpoint from: 1600px
+    } // &:before
 } // .c-section-hero
-
-
-
 .c-section-hero__title {
-	padding-top: inuit-rem($spacing-large);
-
-	@include mq($from: 400px) {
-		width: 330px;
-		position: absolute;
-		top: inuit-rem($spacing-base);
-		left: 50%;
-		transform: translateX(-50%);
-		padding-top: inuit-rem($spacing-base * 1.5);
-	} // breakpoint from: 400px
-
-	@include mq($from: 600px) {
-		width: 415px;
-		padding-top: inuit-rem($spacing-huge);
-		@include font-size(42px, 1.5);
-	} // breakpoint from: 600px
-
-	@include mq($from: tablet) {
-		width: 490px;
-		padding-top: inuit-rem($spacing-huge * 1.4);
-	} // breakpoint from: tablet
+    width: 290px;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 4rem;
+    @include mq($from: 400px) {
+        width: 350px;
+        padding-top: 5rem;
+    } // breakpoint from: 400px
+    @include mq($from: 600px) {
+        width: 415px;
+        padding-top: 8.5rem;
+        font-size: 2.5rem;
+    } // breakpoint from: 600px
+    @include mq($from: tablet) {
+        width: 490px;
+        padding-top: 4.5rem;
+        font-size: 3rem;
+    } // breakpoint from: tablet
+    @include mq($from: 1600px) {
+        top: 2rem;
+        width: 50rem;
+        font-size: 4rem
+    } // breakpoint from: 1600px
 } // .c-section-hero__title
-
-
 .c-section-hero__welcome {
-	position: absolute;
-	top: 390px;
-	left: 2rem;
-	font-weight: bold;
-	text-align: left;
-	@include font-size(24px);
-
-	@include mq($from: 400px) {
-		top: 430px;
-	}
-
-	@include mq($from: 600px) {
-		top: 500px;
-	} // breakpoint from: 600px
-
-	@include mq($from: tablet) {
-		width: 550px;
-		top: 605px;
-		left: 50%;
-		transform: translateX(-50%);
-		text-align: left;
-	} // breakpoint from: tablet
-
+    position: absolute;
+    top: 27rem;
+    left: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.25rem;
+    @include mq($from: 400px) {
+        top: 440px;
+        width: 400px;
+    }
+    @include mq($from: 600px) {
+        top: 555px;
+        left: 50%;
+        width: 480px;
+        transform: translateX(-50%);
+        font-size: 1.5rem;
+    } // breakpoint from: 600px
+    @include mq($from: tablet) {
+        width: 550px;
+        top: 520px;
+    } // breakpoint from: tablet
+    @include mq($from: 1600px) {
+        width: 777px;
+        top: 777px;
+        font-size: 2.5rem;
+    } // breakpoint from: 1600px
 } // .c-section-hero__welcome
+.c-section-hero__waves {
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    right: 0;
+    @include mq($from: 400px) {
+        bottom: -4rem;
+    } // breakpoint from: 400px
+    @include mq($from: tablet) {
+        bottom: 0;
+    } // breakpoint from: tablet
+} // .c-section-hero__waves

@@ -9,15 +9,12 @@
 * 1. Remove horizontal scroll
 * 2. For better reading IranSans font in device with poor resolution
 */
+
 html {
-	font-family: $global-farsi-font-stack;
-	font-weight: 300;
-	color: #fff;
-	background-color: $secondary;
-
-	// overflow-x: hidden; // 1
-
-	@include dpi-mq($until: poor) {
-		font-weight: normal; // 2
-	}
+    font-family: $global-farsi-font-stack;
+    font-weight: 300;
+    // overflow-x: hidden; // 1
+    @include dpi-mq($until: poor) {
+        font-weight: normal; // 2
+    }
 }
