@@ -1,0 +1,23 @@
+.c-next-event {
+    max-width: inuit-rem(480px);
+    margin: 0 auto;
+    padding: 2rem;
+    border: 4px solid $primary;
+    @include mq($from: tablet) {
+        max-width: 44rem;
+        padding: 3rem;
+    } // breakpoint from: tablet
+} // .c-section--next-event
+.c-next-event__date {
+    font-size: 1.1rem;
+} // .c-next-event__date
+.c-next-event__title {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: darken($gray-darker, 10%);
+
+    @include mq($from: tablet) {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    } // breakpoint from: tablet
+} // .c-next-event__title

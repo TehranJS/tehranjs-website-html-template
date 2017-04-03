@@ -12,3 +12,8 @@
 ### 0.0.2
 
 * feature: added :birthday: cake
+
+
+### 0.0.3
+
+* feature: added home-page sections Like: next-event, about, events, blog

@@ -1,0 +1,9 @@
+.c-section--next-event {
+    padding-top: 0;
+
+    @include mq($from: tablet) {
+        padding-top: 4rem;
+								text-align: center;
+    } // breakpoint from: tablet
+
+} // .c-section--next-event

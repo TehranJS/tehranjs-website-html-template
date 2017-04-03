@@ -4,8 +4,8 @@
     position: relative;
     overflow: hidden;
     color: #fff;
-    background: $secondary;
-    background: linear-gradient(to left, $secondary, darken($secondary, 5%));
+    background: $primary;
+    background: linear-gradient(to left, $primary, darken($primary, 5%));
     @include mq($from: 400px) {
         height: 38rem;
     } // breakpoint from: 400px
@@ -98,13 +98,7 @@
 } // .c-section-hero__welcome
 .c-section-hero__waves {
     position: absolute;
-    bottom: -2rem;
+    bottom: 0;
     left: 0;
     right: 0;
-    @include mq($from: 400px) {
-        bottom: -4rem;
-    } // breakpoint from: 400px
-    @include mq($from: tablet) {
-        bottom: 0;
-    } // breakpoint from: tablet
 } // .c-section-hero__waves

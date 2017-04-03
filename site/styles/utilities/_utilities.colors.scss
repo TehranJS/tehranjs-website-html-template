@@ -1,0 +1,18 @@
+/* ==========================================================================
+   #Colors
+   ========================================================================== */
+
+$colors: ( white: #fff, gray: $gray, gray-light: $gray-light, gray-lighter: $gray-lighter, gray-dark: $gray-dark, gray-darker: $gray-darker, primary: $primary, primary-dark: $primary-dark, secondary: $secondary);
+@each $name,
+$color in $colors {
+    .u-color-#{$name} {
+    			color: $color !important;
+    }
+}
+
+@each $name,
+$color in $colors {
+    .u-bgc-#{$name} {
+        background-color: $color !important;
+    }
+}

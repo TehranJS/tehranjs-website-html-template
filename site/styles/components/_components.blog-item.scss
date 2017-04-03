@@ -1,0 +1,6 @@
+.c-blog-item__title {
+    @extend .c-event-item__title;
+} // .c-blog-item__title
+.c-blog-item__subtitle {
+    @extend .c-event-item__subtitle;
+} // .c-blog-item__subtitle
