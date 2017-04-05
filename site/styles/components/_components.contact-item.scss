@@ -1,0 +1,27 @@
+.c-contact-item {
+	text-align: right;
+
+	@include mq($from: mobileLandscape) {
+		display: flex;
+	} // breakpoint from: mobileLandscape
+
+} // .c-contact-item
+
+.c-contact-item__icon {
+		margin-bottom: 1rem;
+		text-align: center;
+
+		@include mq($from: mobileLandscape) {
+			margin-bottom: 0;
+			margin-left: 1rem;
+		} // breakpoint from: mobileLandscape
+
+  svg {
+				fill: $gray;
+
+				@include on-event {
+					fill: $primary;
+				}
+		} // svg
+
+} // .c-contact-item__icon

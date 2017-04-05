@@ -72,11 +72,14 @@
  * Hide.................Helper classes to hide content
  */
 
+
 // SETTINGS
 $inuit-global-font-size: 14px;
 $inuit-global-line-height: 28px;
 @import "../../bower_components/inuitcss/settings/settings.core";
 @import "settings/settings.colors";
+
+
 // TOOLS
 @import "../../bower_components/inuitcss/tools/tools.rem";
 @import "../../bower_components/inuitcss/tools/tools.font-size";
@@ -86,11 +89,15 @@ $mq-breakpoints: ( mobile: 320px, mobileLandscape: 480px, tablet: 768px, desktop
 // desktopAd: 810px
 );
 @import "../../bower_components/sass-mq/_mq.scss";
+
+
 // GENERIC
 @import "../../bower_components/inuitcss/generic/generic.box-sizing";
 @import "../../bower_components/inuitcss/generic/generic.normalize";
 @import "../../bower_components/inuitcss/generic/generic.reset";
 // @import "../../bower_components/inuitcss/generic/generic.shared";
+
+
 // ELEMENTS
 @import "../../bower_components/inuitcss/elements/elements.page";
 $inuit-font-size-h1: 32px !default;
@@ -102,15 +109,17 @@ $inuit-font-size-h6: 12px !default;
 // @import "../../bower_components/inuitcss/elements/elements.headings";
 // @import "../../bower_components/inuitcss/elements/elements.images";
 // @import "../../bower_components/inuitcss/elements/elements.tables";
+
+
 // OBJECTS
 //
 // Uncomment and add to this section as necessary.
-$inuit-wrapper-width: 900px;
+$inuit-wrapper-width: 800px !default;
 @import "../../bower_components/inuitcss/objects/objects.wrapper";
-// @import "../../bower_components/inuitcss/objects/objects.layout";
+@import "../../bower_components/inuitcss/objects/objects.layout";
 // @import "../../bower_components/inuitcss/objects/objects.media";
 // @import "../../bower_components/inuitcss/objects/objects.flag";
-// @import "../../bower_components/inuitcss/objects/objects.list-bare";
+@import "../../bower_components/inuitcss/objects/objects.list-bare";
 // @import "../../bower_components/inuitcss/objects/objects.list-inline";
 // @import "../../bower_components/inuitcss/objects/objects.box";
 // @import "../../bower_components/inuitcss/objects/objects.block";
@@ -118,11 +127,13 @@ $inuit-wrapper-width: 900px;
 // @import "../../bower_components/inuitcss/objects/objects.crop";
 // @import "../../bower_components/inuitcss/objects/objects.tables";
 // @import "../../bower_components/inuitcss/objects/objects.pack";
+
+
 // UTILITIES
 // @import "../../bower_components/inuitcss/utilities/utilities.clearfix";
 $inuit-offsets: false;
 @import "../../bower_components/inuitcss/utilities/utilities.widths";
-// @import "../../bower_components/inuitcss/utilities/utilities.headings";
+@import "../../bower_components/inuitcss/utilities/utilities.headings";
 $inuit-spacing-directions: ( null: null, '-top': '-top', '-right': '-left', '-bottom': '-bottom', '-left': '-right', ) !default;
 @import "../../bower_components/inuitcss/utilities/utilities.spacing";
 // @import "../../bower_components/inuitcss/utilities/utilities.print";

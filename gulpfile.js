@@ -22,6 +22,7 @@ gulp.task('styles', () => {
 			precision: 10,
 			includePaths: ['.']
 		}).on('error', $.sass.logError))
+		.pipe($.if('base.css', $.rtlcss()))
 		.pipe($.postcss([
 			require('postcss-will-change'),
 			require('postcss-cssnext')({

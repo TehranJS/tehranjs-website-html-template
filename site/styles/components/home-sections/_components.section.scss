@@ -1,22 +1,23 @@
 .c-section {
-    padding: 4rem 0;
-    text-align: center;
+  padding: 4rem 0;
+  text-align: center;
 
-    @include mq($from: mobileLandscape) {
-        text-align: initial;
-    } // breakpoint from: mobileLandscape
+  @include mq($from: mobileLandscape) {
+    text-align: initial;
+  } // breakpoint from: mobileLandscape
+
+  @include mq($from: tablet) {
+    font-size: 1.2rem;
+  } // breakpoint from: tablet
+
+  .c-section__title {
+    margin-bottom: 2rem;
+    line-height: 1;
+    color: $gray-darker;
 
     @include mq($from: tablet) {
-        font-size: 1.2rem;
+      font-size: 2rem;
     } // breakpoint from: tablet
-
-    .c-section__title {
-        margin-bottom: 2rem;
-        color: $gray-darker;
-
-        @include mq($from: tablet) {
-            font-size: 2rem;
-        } // breakpoint from: tablet
-    } // .c-section__title
+  } // .c-section__title
 
 } // .c-section

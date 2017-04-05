@@ -12,12 +12,19 @@
     font-size: 1.1rem;
 } // .c-next-event__date
 .c-next-event__title {
-    margin-bottom: 2rem;
     font-size: 1.5rem;
     color: darken($gray-darker, 10%);
 
     @include mq($from: tablet) {
         font-size: 2rem;
-        margin-bottom: 4rem;
     } // breakpoint from: tablet
 } // .c-next-event__title
+.c-next-event__subtitle {
+				@extend .c-event-item__subtitle;
+    margin-bottom: 2rem;
+
+    @include mq($from: tablet) {
+        margin-bottom: 4rem;
+								font-size: 1.2rem;
+    } // breakpoint from: tablet
+} // .c-next-event__subtitle
