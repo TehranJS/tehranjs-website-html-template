@@ -1,6 +1,6 @@
 {
   "name": "tehranjs-website-html-template",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "HTML template of tehranjs.com website",
   "main": "site/index.html",
   "author": "Seyed Naser Hassani <snhasani@gmail.com>",

@@ -25,6 +25,10 @@
 
 
 .c-event-item__title {
+				@include mq($from: tablet) {
+					font-size: 1.5rem;
+				} // breakpoint from: tablet
+
     >a {
         color: $gray-darker;
         @include on-event {

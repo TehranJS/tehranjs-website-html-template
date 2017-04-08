@@ -1,0 +1,30 @@
+
+.c-event-detail__item-title,
+.c-event-detail__item-data {
+		margin-right: 0;
+		padding: .5rem 1rem;
+		@include mq($from: mobileLandscape) {
+			float: right;
+		} // breakpoint from: mobileLandscape
+}
+
+
+.c-event-detail__item-title {
+		background-color: darken($gray-lighter, 2%);
+
+		@include mq($from: mobileLandscape) {
+				clear: right;
+				width: 7rem;
+
+			 &:nth-of-type(2n) {
+				  background-color: transparent;
+		  }
+		} // breakpoint from: mobileLandscape
+}
+
+.c-event-detail__item-title:nth-of-type(2n+1),
+.c-event-detail__item-data:nth-of-type(2n+1) {
+	@include mq($from: mobileLandscape) {
+		background-color: darken($gray-lighter, 2%);
+	}
+}

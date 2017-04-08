@@ -2,7 +2,7 @@
 
 .c-single-page__article {
 
-		.article__header {
+		.c-article__header {
 			padding: 4rem 0 2rem;
 
 			@include mq($from: tablet) {
@@ -11,7 +11,7 @@
 
 		} // .c-single-page__header
 
-		.article__title {
+		.c-article__title {
 
 			@include mq($from: tablet) {
 				font-size: 2.5rem;

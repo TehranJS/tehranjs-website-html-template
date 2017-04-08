@@ -120,7 +120,7 @@ $inuit-wrapper-width: 800px !default;
 // @import "../../bower_components/inuitcss/objects/objects.media";
 // @import "../../bower_components/inuitcss/objects/objects.flag";
 @import "../../bower_components/inuitcss/objects/objects.list-bare";
-// @import "../../bower_components/inuitcss/objects/objects.list-inline";
+@import "../../bower_components/inuitcss/objects/objects.list-inline";
 // @import "../../bower_components/inuitcss/objects/objects.box";
 // @import "../../bower_components/inuitcss/objects/objects.block";
 // @import "../../bower_components/inuitcss/objects/objects.ratio";
@@ -130,7 +130,7 @@ $inuit-wrapper-width: 800px !default;
 
 
 // UTILITIES
-// @import "../../bower_components/inuitcss/utilities/utilities.clearfix";
+@import "../../bower_components/inuitcss/utilities/utilities.clearfix";
 $inuit-offsets: false;
 @import "../../bower_components/inuitcss/utilities/utilities.widths";
 @import "../../bower_components/inuitcss/utilities/utilities.headings";

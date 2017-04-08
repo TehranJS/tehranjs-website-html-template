@@ -13,6 +13,7 @@
 html {
     font-family: $global-farsi-font-stack;
     font-weight: 300;
+				color: $text-color;
     // overflow-x: hidden; // 1
     @include dpi-mq($until: poor) {
         font-weight: normal; // 2

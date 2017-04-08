@@ -24,3 +24,8 @@
 
 * feature: added single page structure
 * feature: added single-post page
+
+
+### 0.0.5
+
+* feature: added events, blog and event page
