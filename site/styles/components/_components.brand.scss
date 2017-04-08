@@ -1,9 +1,16 @@
 
 .c-brand {
-
+  display: inline-block;
+  font-size: 0;
 } // .c-brand
 
 
 .c-brand__logo {
+		width: 3.5rem;
+		height: 3.5rem;
 
+		@include mq($from: tablet) {
+			width: 5rem;
+			height: 5rem;
+		} // breakpoint from: tablet
 } // .c-brand__logo

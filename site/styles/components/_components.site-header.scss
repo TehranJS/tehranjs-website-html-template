@@ -1,4 +1,11 @@
 
-.c-site-header {
+.c-site-header__inner {
+  padding: 1rem 0;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
 
-} // .c-site-header
+		@include mq($from: tablet) {
+  	padding: 2rem 0;
+		} // breakpoint from: tablet
+} // .c-site-header__inner

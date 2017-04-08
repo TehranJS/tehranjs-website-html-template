@@ -92,8 +92,9 @@ $is-active_vertical-rhythm-debugger: false;
 
 // @import 'components/components.bages';
 @import 'components/components.buttons';
-// @import 'components/components.brand';
-// @import 'components/components.site-header';
+@import 'components/components.brand';
+@import 'components/components.site-header';
+@import 'components/components.navigation';
 @import 'components/components.site-footer';
 @import 'components/components.copyright';
 @import 'components/components.home-sections';
@@ -101,6 +102,7 @@ $is-active_vertical-rhythm-debugger: false;
 @import 'components/components.blog-item';
 @import 'components/components.next-event';
 @import 'components/components.contact-item';
+@import 'components/components.single-page';
 
 /**
  * UTILITIES: High-specificity, very explicit selectors. Overrides and helper classes (e.g. .u-hidden {}).

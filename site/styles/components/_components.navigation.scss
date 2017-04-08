@@ -1,0 +1,21 @@
+
+.c-navigation {
+	align-self: center;
+} // .c-navigation
+
+
+.c-navigation__item {
+	display: inline-flex;
+	margin-right: 1rem;
+	color: $gray-dark;
+
+	@include on-event {
+		color: $primary;
+	}
+
+	@include mq($from: tablet) {
+		font-size: 1.3rem;
+		margin-right: 2rem;
+	} // breakpoint from: tablet
+
+} // .c-navigation__item

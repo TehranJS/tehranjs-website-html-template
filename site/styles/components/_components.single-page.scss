@@ -1,0 +1,17 @@
+
+.c-single-page__header {
+	padding: 4rem 0;
+
+	@include mq($from: tablet) {
+		padding: 8rem 0;
+	} // breakpoint from: tablet
+} // .c-single-page__header
+
+
+.c-single-page__main__body {
+
+  @include mq($from: tablet) {
+    font-size: 1.2rem;
+  } // breakpoint from: tablet
+
+} // .c-single-page__main__body
