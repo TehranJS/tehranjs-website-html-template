@@ -8,6 +8,7 @@
 
   @include mq($from: tablet) {
     font-size: 1.2rem;
+    padding: 8rem 0;
   } // breakpoint from: tablet
 
   .c-section__title {

@@ -1,5 +1,10 @@
 .c-contact-item {
 	text-align: right;
+	margin-bottom: 4rem;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 
 	@include mq($from: mobileLandscape) {
 		display: flex;
