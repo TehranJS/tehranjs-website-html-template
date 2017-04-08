@@ -1,17 +1,40 @@
 
-.c-single-page__header {
-	padding: 4rem 0;
 
-	@include mq($from: tablet) {
-		padding: 8rem 0;
-	} // breakpoint from: tablet
-} // .c-single-page__header
+.c-single-page__article {
+
+		.article__header {
+			padding: 4rem 0 2rem;
+
+			@include mq($from: tablet) {
+				padding: 8rem 0 4rem;
+			} // breakpoint from: tablet
+
+		} // .c-single-page__header
+
+		.article__title {
+
+			@include mq($from: tablet) {
+				font-size: 2.5rem;
+			} // breakpoint from: tablet
+
+		} // .article__header
 
 
-.c-single-page__main__body {
+		.c-article__subtitle {
 
-  @include mq($from: tablet) {
-    font-size: 1.2rem;
-  } // breakpoint from: tablet
+			@include mq($from: tablet) {
+				font-size: 1.2rem;
+			} // breakpoint from: tablet
 
-} // .c-single-page__main__body
+		} // .c-article__subtitle
+
+
+		.c-article__body {
+
+				@include mq($from: tablet) {
+						font-size: 1.2rem;
+				} // breakpoint from: tablet
+
+		} // .c-article__main__body
+
+} // .c-single-page__article

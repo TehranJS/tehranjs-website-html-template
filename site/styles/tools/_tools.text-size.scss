@@ -1,0 +1,12 @@
+
+@mixin text-size($size, $line-height: auto, $important: false) {
+
+	@if $size == small {
+		@include font-size($small-text, $line-height, $important);
+	} @elseif  $size == large {
+		@include font-size($large-text, $line-height, $important);
+	} @elseif  $size == tiny {
+		@include font-size($tiny-text, $line-height, $important);
+	}
+
+}

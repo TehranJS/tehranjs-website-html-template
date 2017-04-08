@@ -1,0 +1,12 @@
+
+// .u-text-tiny {
+// 	@include text-size($size: tiny, $line-height: 1, $important: true);
+// }
+
+// .u-text-small {
+// 	@include text-size($size: small, $line-height: auto, $important: true);
+// }
+
+.u-text-large {
+	@include text-size($size: large, $line-height: auto, $important: true);
+}

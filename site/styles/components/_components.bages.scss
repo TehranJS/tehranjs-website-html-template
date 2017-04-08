@@ -18,7 +18,6 @@
   margin: 0; /* [4] */
   padding: 0 $spacing-small;
   border-radius: $global-radius;
-  @include font-size(12px);
 
 	&--tiny {
 		padding-right: $spacing-tiny;
@@ -33,10 +32,15 @@
 /* Style variants
    ========================================================================== */
 
-// .c-bage--primary {
-//   background-color: $primary-darker;
-//   color: white;
-// }
+.c-bage--primary {
+  background-color: $gray-lighter;
+  color: $gray-dark;
+
+		@include on-event {
+			background-color: $primary;
+  	color: white;
+		}
+}
 
 
 /**

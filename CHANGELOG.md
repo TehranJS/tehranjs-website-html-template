@@ -18,3 +18,9 @@
 
 * feature: added home-page sections Like: next-event, about, events, blog
 * feature: added home-page contact sections
+
+
+### 0.0.4
+
+* feature: added single page structure
+* feature: added single-post page
